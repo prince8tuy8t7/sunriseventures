@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SunriseMultiVentures</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>SunriseMultiVentures 🌅</h1>
+    <p>Quality food products delivered with care</p>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to SunriseMultiVentures</h2>
+    <p>Fresh food products for your family, delivered safely and on time.</p>
+  </section>
+
+  <!-- What We Do -->
+  <section class="what-we-do">
+    <h2>What We Do</h2>
+    <p>At SunriseMultiVentures, we provide high-quality food items like Garri, Yam, Beans, and Elubo.  
+    We focus on fresh, clean, and affordable products delivered straight to your doorstep.  
+    Our goal is to make your cooking easy and enjoyable.</p>
+    <ul>
+      <li>Fresh Garri, Yam, Beans, and Elubo</li>
+      <li>Fast delivery to your location</li>
+      <li>Reliable and affordable prices</li>
+      <li>Easy ordering with just your phone number</li>
+    </ul>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products">
+    <h2>Our Products</h2>
+    <div class="product-list">
+
+      <div class="card">
+        <img src="garri.jpg" alt="Garri">
+        <h3>Garri</h3>
+        <p>₦3,000</p>
+        <button onclick="order('Garri','3000')">Order</button>
+      </div>
+
+      <div class="card">
+        <img src="yam.jpg" alt="Yam">
+        <h3>Yam</h3>
+        <p>₦2,500</p>
+        <button onclick="order('Yam','2500')">Order</button>
+      </div>
+
+      <div class="card">
+        <img src="beans.jpg" alt="Beans">
+        <h3>Beans</h3>
+        <p>₦4,000</p>
+        <button onclick="order('Beans','4000')">Order</button>
+      </div>
+
+      <div class="card">
+        <img src="elubo.jpg" alt="Elubo">
+        <h3>Elubo</h3>
+        <p>₦3,500</p>
+        <button onclick="order('Elubo','3500')">Order</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Order Form -->
+  <section class="order-section" id="orderBox" class="hidden">
+    <h2 id="orderText">Order Now</h2>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" value="1" min="1">
+    <input type="tel" id="phone" placeholder="Enter phone number">
+    <button onclick="sendOrder()">Send Order</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Contact us: oteniorodaniel5@gmail.com</p>
+    <p>© 2026 SunriseMultiVentures</p>
+  </footer>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
